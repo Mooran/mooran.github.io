@@ -80,16 +80,16 @@
 
 
 
-<meta name="description" content="SSH1234#使用密码登录ssh &amp;lt;Remote Username&amp;gt;@&amp;lt;Remote Server Address&amp;gt; -p &amp;lt;port&amp;gt;#使用PrivateKey登录ssh -i &amp;lt;PrivateKey file&amp;gt; &amp;lt;Remote Username&amp;gt;@&amp;lt;Remote Server Address&amp;gt; -p &amp;lt;port&amp;g">
+<meta name="description" content="SSH1234#使用密码登录 1  ssh &amp;lt;Remote Username&amp;gt;@&amp;lt;Remote Server Address&amp;gt; -p &amp;lt;port&amp;gt;#使用PrivateKey登录 ssh -i &amp;lt;PrivateKey file&amp;gt; &amp;lt;Remote Username&amp;gt;@&amp;lt;Remote Server Address&amp;gt; -p &amp;lt;p">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Unix-Command-Note">
 <meta property="og:url" content="http://blog.zhongjianyu.cn/2016/04/13/Unix-Command-Note/index.html">
 <meta property="og:site_name" content="Mooran Blog">
-<meta property="og:description" content="SSH1234#使用密码登录ssh &amp;lt;Remote Username&amp;gt;@&amp;lt;Remote Server Address&amp;gt; -p &amp;lt;port&amp;gt;#使用PrivateKey登录ssh -i &amp;lt;PrivateKey file&amp;gt; &amp;lt;Remote Username&amp;gt;@&amp;lt;Remote Server Address&amp;gt; -p &amp;lt;port&amp;g">
-<meta property="og:updated_time" content="2016-04-12T21:12:00.000Z">
+<meta property="og:description" content="SSH1234#使用密码登录 1  ssh &amp;lt;Remote Username&amp;gt;@&amp;lt;Remote Server Address&amp;gt; -p &amp;lt;port&amp;gt;#使用PrivateKey登录 ssh -i &amp;lt;PrivateKey file&amp;gt; &amp;lt;Remote Username&amp;gt;@&amp;lt;Remote Server Address&amp;gt; -p &amp;lt;p">
+<meta property="og:updated_time" content="2016-04-12T21:38:28.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Unix-Command-Note">
-<meta name="twitter:description" content="SSH1234#使用密码登录ssh &amp;lt;Remote Username&amp;gt;@&amp;lt;Remote Server Address&amp;gt; -p &amp;lt;port&amp;gt;#使用PrivateKey登录ssh -i &amp;lt;PrivateKey file&amp;gt; &amp;lt;Remote Username&amp;gt;@&amp;lt;Remote Server Address&amp;gt; -p &amp;lt;port&amp;g">
+<meta name="twitter:description" content="SSH1234#使用密码登录 1  ssh &amp;lt;Remote Username&amp;gt;@&amp;lt;Remote Server Address&amp;gt; -p &amp;lt;port&amp;gt;#使用PrivateKey登录 ssh -i &amp;lt;PrivateKey file&amp;gt; &amp;lt;Remote Username&amp;gt;@&amp;lt;Remote Server Address&amp;gt; -p &amp;lt;p">
 
 
 
@@ -267,22 +267,22 @@
       
 
       
-        <h2 id="SSH"><a href="#SSH" class="headerlink" title="SSH"></a>SSH</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#使用密码登录</span></span><br><span class="line">ssh &lt;Remote Username&gt;@&lt;Remote Server Address&gt; -p &lt;port&gt;</span><br><span class="line"><span class="comment">#使用PrivateKey登录</span></span><br><span class="line">ssh -i &lt;PrivateKey file&gt; &lt;Remote Username&gt;@&lt;Remote Server Address&gt; -p &lt;port&gt;</span><br></pre></td></tr></table></figure>
+        <h2 id="SSH"><a href="#SSH" class="headerlink" title="SSH"></a>SSH</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#使用密码登录 1 </span></span><br><span class="line"> ssh &lt;Remote Username&gt;@&lt;Remote Server Address&gt; -p &lt;port&gt;</span><br><span class="line"><span class="comment">#使用PrivateKey登录</span></span><br><span class="line"> ssh -i &lt;PrivateKey file&gt; &lt;Remote Username&gt;@&lt;Remote Server Address&gt; -p &lt;port&gt;</span><br></pre></td></tr></table></figure>
 <h2 id="安装-JDK"><a href="#安装-JDK" class="headerlink" title="安装 JDK"></a>安装 JDK</h2><h3 id="通用"><a href="#通用" class="headerlink" title="通用"></a>通用</h3><ol>
 <li><p><a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank" rel="external">官网下载jdk</a></p>
 </li>
 <li><p>解压 并移动到/usr/lib/jvm/目录下</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tar zxvf jdk-*-*.tar.gz</span><br><span class="line">mv jdk-*-* /usr/lib/jvm</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tar zxvf jdk-*-*.tar.gz </span><br><span class="line">mv jdk-*-* /usr/lib/jvm</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>配置环境变量</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> JAVA_HOME=/usr/java/jdk1.6.0_45</span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$JAVA_HOME</span>/bin:<span class="variable">$PATH</span></span><br><span class="line"><span class="built_in">export</span> CLASSPATH=.:<span class="variable">$JAVA_HOME</span>/lib/dt.jar:<span class="variable">$JAVA_HOME</span>/lib/tools.jar</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> JAVA_HOME=/usr/lib/jvm/jdk-*-*</span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$JAVA_HOME</span>/bin:<span class="variable">$PATH</span></span><br><span class="line"><span class="built_in">export</span> CLASSPATH=.:<span class="variable">$JAVA_HOME</span>/lib/dt.jar:<span class="variable">$JAVA_HOME</span>/lib/tools.jar</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 <h3 id="Ubuntu专用"><a href="#Ubuntu专用" class="headerlink" title="Ubuntu专用"></a>Ubuntu专用</h3><ol>
 <li><p>安装jdk</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#安装python支持</span></span><br><span class="line">sudo apt-get install python-software-properties</span><br><span class="line"><span class="comment">#添加ppa软件源</span></span><br><span class="line">sudo add-apt-repository ppa:webupd8team/java</span><br><span class="line"><span class="comment">#更新缓存</span></span><br><span class="line">sudo apt-get update</span><br><span class="line"><span class="comment">#安装java8 安装在/usr/lib/jvm/java-8-oracle</span></span><br><span class="line">sudo apt-get install oracle-java8-installer</span><br></pre></td></tr></table></figure>
 </li>
-<li><p><a href="#add-environment-variables">配置环境变量</a>加入</p>
+<li><p><a href="#add-environment-variables">配置环境变量</a></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">JAVA_HOME=<span class="string">"/usr/lib/jvm/java-8-oracle"</span></span><br></pre></td></tr></table></figure>
 </li>
 </ol>
